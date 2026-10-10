@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__left">
             <div class="header__logo">
                 <h1><a href="#"><img src="img/logo.svg" alt="web entertainment design"></a></h1>
             </div>
@@ -21,17 +21,17 @@
                     <li><a href="#company">COMPANY</a></li>
                 </ul>
             </div>
-            <div class="header__contact">
-                <a href="#">お問い合わせ</a>
-            </div>
+        </div>
+        <div class="header__contact">
+            <a href="#">お問い合わせ</a>
         </div>
     </header>
 
     <div class="hero">
-        <!-- 画像はCSSで対応する -->
+        <img src="img/mainvisual.jpg">
     </div>
 
-    <section id="news" class="news">
+    <section id="news" class="news wrapper">
         <div class="container">
             <div class="title-container">
                 <h2>NEWS</h2>
@@ -64,8 +64,11 @@
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
+    <section id="about" class="about wrapper">
+        <div class="about__image">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about__text">
             <div class="title-container">
                 <h2>ABOUT</h2>
                 <h3>私たちについて</h3>
@@ -73,15 +76,15 @@
             </div>
             <div class="about__description">
                 <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="business" class="business">
+    <section id="business" class="business wrapper">
         <div class="container">
             <div class="title-container">
                 <h2>BUSINESS</h2>
@@ -89,7 +92,7 @@
                 <div class="border-line"></div>
             </div>
             <div class="business__list">
-                <div class="list-1">
+                <div class="list-container">
                     <div class="business__content">
                         <h4 class="business__title">Web制作・マーケティング</h4>
                         <a href="#"><img src="img/business1.jpg" alt=""></a>
@@ -99,7 +102,7 @@
                         <a href="#"><img src="img/business2.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="list-2">
+                <div class="list-container">
                     <div class="business__content">
                         <h4 class="business__title">プロモーション企画・制作</h4>
                         <a href="#"><img src="img/business3.jpg" alt=""></a>
@@ -112,7 +115,7 @@
             </div>
     </section>
 
-    <section id="company" class="company">
+    <section id="company" class="company wrapper">
         <div class="container">
             <div class="company__text">
                 <div class="title-container">
@@ -156,19 +159,21 @@
     </section>
 
     <footer class="footer">
-        <div class="conteiner">
-            <div class="footer__logo">
-                <img src="img/logo.svg" alt="web entertainment design">
+        <div class="container">
+            <div class="flex">
+                <div class="footer__logo">
+                    <img src="img/logo.svg" alt="web entertainment design">
+                </div>
+                <div class="footer__info">
+                    <p>Web Entertainment Design Inc.</p>
+                    <p>West Building 3F</p>
+                    <p>9-99 Sakuragaokacho Shibuya-ku</p>
+                    <p>Tokyo, Japan 150-0031</p>
+                    <p>T/99-9999-9999</p>
+                </div>
             </div>
-            <div class="footer__info">
-                <p>Web Entertainment Design Inc.</p>
-                <p>West Building 3F</p>
-                <p>9-99 Sakuragaokacho Shibuya-ku</p>
-                <p>Tokyo, Japan 150-0031</p>
-                <p>T/99-9999-9999</p>
-            </div>
+            <p class="copyright">&copy; Web Entertainment Design Inc.</p>
         </div>
-        <p>&copy; Web Entertainment Design Inc.</p>
     </footer>
 </body>
 </html>
