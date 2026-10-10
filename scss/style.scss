@@ -69,6 +69,7 @@ body {
     @include media-sp($break-point) {
         padding: 0 2%;
         margin-bottom: 24px;
+        height: auto;
     }
 
     &__left {
@@ -215,7 +216,7 @@ body {
         }
 
         img {
-            max-width: 100%;
+            width: 100%;
             height: 400px;
             object-fit: cover;
         }
@@ -253,7 +254,7 @@ body {
         }
 
         .list-container {
-            width: calc( (100% - 128px) / 2);
+            width: calc( (100% - 64px) / 2);
 
             @include media-sp($break-point) {
                 width: 100%;
@@ -269,8 +270,12 @@ body {
                 }
 
                 @include media-sp($break-point) {
-                    justify-self: center;
                     margin-bottom: 48px;
+
+                    & > a {
+                        display: block;
+                        text-align: center;
+                    }
                 }
             }
         }
